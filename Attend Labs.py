@@ -15,11 +15,11 @@ advancedOS = 'https://eu.bbcollab.com/collab/ui/session/guest/566e6336815c400fb8
 graphics = 'https://eu.bbcollab.com/collab/ui/session/guest/0bef3ac5648845f8a747a6a2e40ca1ef'
 concepts = 'https://eu.bbcollab.com/collab/ui/session/guest/cc52e24eae9146289f26a2c1358dce9a'
 
-def takeScreenshot():
+def takeScreenshot() -> None:
     myScreenshot = pyautogui.screenshot()
     myScreenshot.save(r'lab ' + str(i) + '.jpg')
 
-def attendLab(url:str):
+def attendLab(url:str) -> None:
 
     webbrowser.get(chrome_path).open(url)
 
