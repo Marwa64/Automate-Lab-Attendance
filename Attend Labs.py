@@ -19,7 +19,7 @@ def takeScreenshot():
     myScreenshot = pyautogui.screenshot()
     myScreenshot.save(r'lab ' + str(i) + '.jpg')
 
-def attendLab(url):
+def attendLab(url:str):
 
     webbrowser.get(chrome_path).open(url)
 
